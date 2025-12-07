@@ -21,49 +21,48 @@
 	};
 
 	const features = [
-		{ title: 'Text to Speech', icon: Icons.Text },
-		{ title: 'Eleven Music', icon: Icons.Music },
-		{ title: 'AI Sound Effects', icon: Icons.Wand },
-		{ title: 'Captions', icon: Icons.Captions },
-		{ title: 'Voice Changer', icon: Icons.Mic },
-		{ title: 'Transcription', icon: Icons.FileText },
-		{ title: 'Voice Isolator', icon: Icons.Layers },
-		{ title: 'Video support', icon: Icons.Video, color: 'text-blue-500' }
+		{ title: 'Text & Audio Upload', icon: Icons.Text },
+		{ title: 'Voice Cloning', icon: Icons.Mic },
+		{ title: 'Multi-Channel Deploy', icon: Icons.Globe },
+		{ title: 'Live Content Feeds', icon: Icons.Layers },
+		{ title: 'Custom Behavior', icon: Icons.Wand },
+		{ title: 'Privacy Controls', icon: Icons.FileText },
+		{ title: 'Video Integration', icon: Icons.Video },
+		{ title: 'Analytics Dashboard', icon: Icons.Captions, color: 'text-primary-500' }
 	];
 
-	const voices = [
-		{ name: 'Burt Reynolds', desc: "ElevenLabs' Iconic Voice", color: 'bg-blue-500' },
-		{ name: 'Enrique Montragón', desc: "Middle aged male with a Mexican Spanish accent", color: 'bg-indigo-600' },
-		{ name: 'Finn', desc: "A well-connected, young conversational male", color: 'bg-orange-500' },
-		{ name: 'Hope', desc: "A warm, soothing, and captivating voice", color: 'bg-purple-500' },
-		{ name: 'Magic Jack', desc: "Casual, friendly, heart-felt voice", color: 'bg-pink-500' },
-		{ name: 'Jack Bass', desc: "A calm and gritty storyteller", color: 'bg-green-500' },
-		{ name: 'Jamathan', desc: "A warm, smooth, and versatile voice", color: 'bg-blue-300' },
-		{ name: 'Lean Stern', desc: "A rich, deep voice for fantasy", color: 'bg-red-300' },
+	const cloneExamples = [
+		{ name: 'Brian Halligan', desc: "HubSpot co-founder sharing scaling insights", color: 'bg-primary-500' },
+		{ name: 'Lennybot', desc: "Product expertise from Lenny Rachitsky", color: 'bg-primary-600' },
+		{ name: 'Sam Feldt', desc: "Multi-platinum DJ for fan engagement", color: 'bg-secondary-500' },
+		{ name: 'Vanessa Van Edwards', desc: "Behavioral research and communication", color: 'bg-primary-400' },
+		{ name: 'Jay Shetty', desc: "Author and podcast host insights", color: 'bg-secondary-600' },
+		{ name: 'Heather Monahan', desc: "Executive coaching and leadership", color: 'bg-primary-700' },
+		{ name: 'Your Clone', desc: "Create your own digital mind", color: 'bg-gray-300' },
+		{ name: 'Expert Clone', desc: "Share your unique knowledge at scale", color: 'bg-gray-400' },
 	];
 
 	const faqs = [
-		"What is Studio designed for?",
-		"Does Studio support multilingual audio and captions?",
-		"Can I assign particular speakers to specific text fragments?",
-		"Which file types can I upload?",
-		"How does Studio integrate with other tools from your ecosystem?",
-		"How do I edit video online with Studio?",
-		"Can I add voiceover to video?",
-		"How do I add music to video or audio?",
-		"Can Studio transcribe audio to text or video to text?",
-		"How do I remove background noise from audio or video?",
-		"Can I merge videos or fix out-of-sync media?",
-		"Does Studio include an online audio editor?"
+		"What is Delphi and how does it work?",
+		"How does my AI clone learn my voice and style?",
+		"What content can I upload to train my clone?",
+		"Is my data private and secure?",
+		"Can I deploy my clone on multiple platforms?",
+		"How do I customize my clone's behavior?",
+		"Can my clone speak multiple languages?",
+		"What's the difference between Delphi tiers?",
+		"How do I monetize my AI clone?",
+		"Can I update my clone with new content?",
+		"Who owns my digital mind and its responses?",
+		"How accurate is the AI at capturing my knowledge?"
 	];
 
     const footerLinks = {
-        RESEARCH: ['Text to Speech (TTS)', 'Speech to Text', 'Realtime Speech to Text', 'Voice Changer', 'Text to Sound Effects', 'Voice Cloning', 'Voice Isolator', 'AI Music Generator'],
-        PRODUCTS: ['Studio', 'Agents Platform', 'Dubbing Studio', 'Voice Library', 'Image & Video', 'Audio Native', 'ElevenStudios', 'API', 'Voiceover Studio', 'ElevenReader', 'Mobile App'],
-        SOLUTIONS: ['For Enterprise', 'For Teams', 'For Developers', 'For Startups', 'For Students', 'Retail and E-Commerce', 'Telecommunications', 'Financial Services', 'Technology', 'Customer Support', 'AI Voice Agents'],
-        'EARN AS': ['Affiliate', 'Voice Actor', 'Data Partner', 'Commercial Partner'],
-        RESOURCES: ['API Reference', 'Product Guides', 'Help Centre', 'Languages', 'Webinars', 'Discord'],
-        COMPANY: ['About', 'Safety', 'Careers', 'Blog', 'Impact Program', 'Brand and Press Kit', 'Iconic Marketplace', 'Modern Slavery Policy', 'CCPA Notice']
+        PRODUCT: ['AI Clone Platform', 'Voice & Style Training', 'Multi-Channel Deploy', 'Content Ingestion', 'Analytics', 'API Access', 'Mobile App', 'Delphi Immortal'],
+        'USE CASES': ['For Experts', 'For Coaches', 'For Creators', 'For Business Owners', 'For Celebrities', 'For Writers', 'Lead Generation', 'Customer Support'],
+        FEATURES: ['Text Upload', 'Audio & Video', 'Live Content Feeds', 'Voice Cloning', 'Custom Behavior', 'Privacy Controls', 'SMS & WhatsApp', 'Website Embed'],
+        RESOURCES: ['API Documentation', 'Help Center', 'Case Studies', 'Blog', 'Community', 'Webinars', 'Clone Examples'],
+        COMPANY: ['About Delphi', 'Careers', 'Privacy Policy', 'Terms of Service', 'Security', 'Contact Sales', 'Press Kit']
     };
 </script>
 
@@ -72,21 +71,21 @@
 	<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
 		<div class="container-custom flex h-16 items-center justify-between">
 			<div class="flex items-center gap-8">
-				<a href="/" class="flex items-center gap-2 font-semibold text-lg tracking-tight">
-                    <span class="font-bold">II</span>ElevenLabs
+				<a href="/" class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary-600">
+                    Delphi
                 </a>
 				<div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-600">
-					<a href="#" class="hover:text-black flex items-center gap-1">Creative Platform <span class="opacity-50 text-[10px]">▼</span></a>
-					<a href="#" class="hover:text-black flex items-center gap-1">Agents Platform <span class="opacity-50 text-[10px]">▼</span></a>
-					<a href="#" class="hover:text-black flex items-center gap-1">Developers <span class="opacity-50 text-[10px]">▼</span></a>
-					<a href="#" class="hover:text-black flex items-center gap-1">Resources <span class="opacity-50 text-[10px]">▼</span></a>
-					<a href="#" class="hover:text-black">Enterprise</a>
-					<a href="#" class="hover:text-black">Pricing</a>
+					<a href="#" class="hover:text-primary-600 flex items-center gap-1">Product <span class="opacity-50 text-[10px]">▼</span></a>
+					<a href="#" class="hover:text-primary-600 flex items-center gap-1">Use Cases <span class="opacity-50 text-[10px]">▼</span></a>
+					<a href="#" class="hover:text-primary-600 flex items-center gap-1">API <span class="opacity-50 text-[10px]">▼</span></a>
+					<a href="#" class="hover:text-primary-600 flex items-center gap-1">Resources <span class="opacity-50 text-[10px]">▼</span></a>
+					<a href="#" class="hover:text-primary-600">Pricing</a>
+					<a href="#" class="hover:text-primary-600">Clone Examples</a>
 				</div>
 			</div>
 			<div class="flex items-center gap-4 text-sm font-medium">
-				<a href="#" class="text-gray-600 hover:text-black">Log in</a>
-				<a href="#" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">Sign up</a>
+				<a href="#" class="text-gray-600 hover:text-primary-600">Log in</a>
+				<a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-full hover:bg-primary-700 transition">Create Your Clone</a>
 			</div>
 		</div>
 	</nav>
@@ -96,78 +95,90 @@
 		<div class="container-custom">
 			<div class="flex flex-col lg:flex-row gap-12 mb-16">
 				<div class="lg:w-1/2">
-					<h1 class="text-5xl sm:text-6xl font-medium tracking-tight leading-[1.1] mb-8">
-						The best AI audio models <br />
-						in one powerful editor
+					<h1 class="text-5xl sm:text-6xl font-semibold tracking-tight leading-[1.1] mb-8">
+						Never repeat yourself again
 					</h1>
-					<a href="#" class="inline-block bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
-						Try Studio for free
+					<p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-lg">
+						Create an interactive AI clone that answers questions in your voice and style. Scale your knowledge without the repetitive effort.
+					</p>
+					<a href="#" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-full font-medium hover:bg-primary-700 transition">
+						Create Your Clone
 					</a>
 				</div>
 				<div class="lg:w-1/2 lg:pt-2">
-					<p class="text-lg text-gray-600 leading-relaxed max-w-lg">
-						Built for video creators, podcasters and audiobook authors — bring your stories to life with expressive AI voiceovers, music and sound effects, and real-world recordings.
+					<p class="text-lg text-gray-600 leading-relaxed max-w-lg mb-6">
+						Built for experts, coaches, and creators who need to monetize knowledge but lack time for repetitive questions. Deploy your digital mind across SMS, WhatsApp, web, and voice.
 					</p>
+					<div class="flex flex-wrap gap-2">
+						<div class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Trusted by Brian Halligan</div>
+						<div class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Lennybot</div>
+						<div class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Sam Feldt</div>
+					</div>
 				</div>
 			</div>
 
-			<!-- Studio UI Mockup -->
-			<div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-50 aspect-[16/9] lg:aspect-[16/8]">
+			<!-- Conversational Interface Mockup -->
+			<div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white aspect-[16/9] lg:aspect-[16/8]">
 				<!-- Browser chrome/UI header -->
-				<div class="absolute top-0 left-0 right-0 h-12 bg-white border-b border-gray-200 flex items-center justify-between px-4">
+				<div class="absolute top-0 left-0 right-0 h-12 bg-gray-50 border-b border-gray-200 flex items-center justify-between px-4">
                     <div class="flex items-center gap-2">
                          <div class="w-3 h-3 rounded-full bg-red-400"></div>
                          <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
                          <div class="w-3 h-3 rounded-full bg-green-400"></div>
                     </div>
-                    <div class="text-xs font-medium text-gray-500">Studio 3.0</div>
+                    <div class="text-xs font-medium text-gray-500">delphi.ai/brian-halligan</div>
                     <div class="w-16"></div>
                 </div>
                 
                 <!-- Mockup Content -->
-                <div class="absolute top-12 bottom-0 left-0 right-0 flex bg-white">
-                    <!-- Sidebar -->
-                    <div class="w-16 border-r border-gray-200 flex flex-col items-center py-4 gap-6">
-                         <div class="w-8 h-8 rounded bg-gray-100"></div>
-                         <div class="w-8 h-8 rounded bg-gray-100"></div>
-                         <div class="w-8 h-8 rounded bg-gray-100"></div>
-                         <div class="w-8 h-8 rounded bg-gray-100"></div>
-                    </div>
-                    <!-- Main Area -->
-                    <div class="flex-1 flex flex-col">
-                        <!-- Canvas/Preview -->
-                        <div class="flex-1 bg-gray-50 p-8 flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 flex">
-                                <div class="w-1/2 p-8 flex flex-col justify-center">
-                                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">ElevenLabs proudly introduces Studio 3.0.</h3>
-                                    <div class="space-y-2">
-                                        <div class="h-2 bg-gray-200 rounded w-full"></div>
-                                        <div class="h-2 bg-gray-200 rounded w-5/6"></div>
-                                        <div class="h-2 bg-gray-200 rounded w-4/6"></div>
+                <div class="absolute top-12 bottom-0 left-0 right-0 flex bg-gradient-to-br from-primary-50 to-white">
+                    <!-- Main Conversation Area -->
+                    <div class="flex-1 flex flex-col p-8">
+                        <!-- Profile Header -->
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary-400 to-primary-600"></div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Brian Halligan</h3>
+                                <p class="text-sm text-gray-600">HubSpot Co-founder • Sequoia Partner</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Conversation -->
+                        <div class="flex-1 space-y-4 overflow-hidden">
+                            <!-- User Question -->
+                            <div class="flex justify-end">
+                                <div class="bg-primary-100 text-primary-900 px-4 py-3 rounded-2xl rounded-tr-sm max-w-md">
+                                    <p class="text-sm">What's the most important lesson you learned scaling HubSpot from $0 to $30B?</p>
+                                </div>
+                            </div>
+                            
+                            <!-- AI Response -->
+                            <div class="flex justify-start">
+                                <div class="bg-white border border-gray-200 px-4 py-3 rounded-2xl rounded-tl-sm max-w-lg shadow-sm">
+                                    <p class="text-sm text-gray-800 leading-relaxed">The biggest lesson was understanding that culture compounds. In the early days, we obsessed over our company values and hiring process. Every person you bring in either strengthens or dilutes your culture...</p>
+                                    <div class="mt-2 flex items-center gap-2 text-xs text-gray-500">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                                        <span>Answered instantly</span>
                                     </div>
                                 </div>
-                                <div class="w-1/2 relative">
-                                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" alt="Visual" class="w-full h-full object-cover rounded-lg shadow-lg" />
+                            </div>
+                            
+                            <!-- Suggested Questions -->
+                            <div class="pt-4">
+                                <p class="text-xs text-gray-500 mb-2">Suggested questions:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <button class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs hover:border-primary-300 transition">How did you approach fundraising?</button>
+                                    <button class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs hover:border-primary-300 transition">What's your advice for first-time founders?</button>
                                 </div>
                             </div>
                         </div>
-                        <!-- Timeline -->
-                        <div class="h-32 border-t border-gray-200 bg-white p-2">
-                            <div class="flex items-center justify-between mb-2 px-2">
-                                <div class="flex gap-2">
-                                    <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-xs">▶</div>
-                                    <div class="text-xs text-gray-500 mt-1">0:02 / 0:15</div>
-                                </div>
-                            </div>
-                            <div class="relative h-16 bg-gray-50 rounded border border-gray-100 overflow-hidden">
-                                <!-- Tracks -->
-                                <div class="absolute top-1 left-0 right-0 h-6 bg-blue-100 mx-2 rounded border border-blue-200"></div>
-                                <div class="absolute top-8 left-10 right-20 h-6 bg-orange-100 mx-2 rounded border border-orange-200"></div>
-                                <!-- Playhead -->
-                                <div class="absolute top-0 bottom-0 left-1/3 w-0.5 bg-black z-10 flex flex-col items-center">
-                                    <div class="w-3 h-3 bg-black rotate-45 -mt-1.5"></div>
-                                </div>
-                            </div>
+                        
+                        <!-- Input Area -->
+                        <div class="mt-4 flex gap-2">
+                            <input type="text" placeholder="Ask Brian anything..." class="flex-1 px-4 py-3 bg-white border border-gray-200 rounded-full text-sm focus:outline-none focus:border-primary-400" />
+                            <button class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center hover:bg-primary-700 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -175,10 +186,13 @@
             
             <div class="flex justify-center mt-6 gap-2">
                 <button class="bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-medium shadow-sm flex items-center gap-1">
-                    {@html Icons.Video} Video
+                    {@html Icons.Globe} Web
                 </button>
                 <button class="text-gray-400 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
-                    {@html Icons.Music} Audio
+                    {@html Icons.Mic} Voice
+                </button>
+                <button class="text-gray-400 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                    {@html Icons.Text} SMS
                 </button>
             </div>
 		</div>
@@ -187,23 +201,26 @@
 	<!-- Intro Section -->
 	<section class="py-20 bg-white">
 		<div class="container-custom text-center">
-			<p class="text-sm text-gray-500 mb-4">Introducing Studio 3.0</p>
-			<h2 class="text-4xl sm:text-5xl font-medium tracking-tight max-w-4xl mx-auto mb-12 leading-[1.1]">
-				Create immersive experiences with Studio 3.0 — from podcasts and audiobooks to videos. Enhance your content with AI voices, music, and captions, all in one editor.
+			<p class="text-sm text-primary-600 font-medium mb-4">Conversational Media</p>
+			<h2 class="text-4xl sm:text-5xl font-semibold tracking-tight max-w-4xl mx-auto mb-6 leading-[1.1]">
+				The next evolution of knowledge transfer
 			</h2>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+				Delphi creates interactive AI clones that answer questions in your voice and style. Upload your content, train your digital mind, and deploy across every channel — from SMS to web to voice.
+			</p>
 
 			<div class="flex flex-wrap justify-center gap-3 mb-12 max-w-4xl mx-auto">
 				{#each features as feature}
-					<div class="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-full border border-gray-100 text-sm font-medium text-gray-700">
-						<span class="{feature.color || 'text-gray-900'}">{@html feature.icon}</span>
+					<div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 rounded-full border border-primary-100 text-sm font-medium text-primary-700">
+						<span class="{feature.color || 'text-primary-600'}">{@html feature.icon}</span>
 						{feature.title}
 					</div>
 				{/each}
 			</div>
 
-			<button class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition flex items-center gap-2 mx-auto">
+			<button class="bg-primary-600 text-white px-6 py-3 rounded-full font-medium hover:bg-primary-700 transition flex items-center gap-2 mx-auto">
 				<div class="w-5 h-5 fill-current">{@html Icons.Play}</div>
-				Watch intro
+				See how it works
 			</button>
 		</div>
 	</section>
@@ -215,61 +232,61 @@
 				<!-- Left Column: Text -->
 				<div class="space-y-32 py-12">
 					<div class="max-w-md">
-						<h3 class="text-3xl font-medium mb-4">Add new voiceovers</h3>
+						<h3 class="text-3xl font-semibold mb-4">Upload your knowledge</h3>
 						<p class="text-gray-600 leading-relaxed mb-6">
-							Bring your script to life with natural-sounding voiceovers. Choose from over 10,000 voices - realistic accents, character voices, or professional narration - then edit recordings by simply editing the text.
+							Train your AI clone with text, audio, and video content. Link to live content feeds for continuous learning. Delphi indexes everything and mirrors your tone, style, and knowledge automatically.
 						</p>
 					</div>
                     
                     <div class="max-w-md">
-						<h3 class="text-3xl font-medium mb-4">Generate bespoke background music with Eleven Music</h3>
+						<h3 class="text-3xl font-semibold mb-4">Clone your voice and style</h3>
 						<p class="text-gray-600 leading-relaxed mb-6">
-							Create music that feels custom-made for your content. Generate soundtracks in any genre or style, or let Studio auto-score your video with music created to match your scene.
+							Your AI speaks only your words — no improvisation without consent. Customize behavior with notes on how your clone should respond. Built to protect your legacy and maintain authenticity over time.
 						</p>
 					</div>
 
                     <div class="max-w-md">
-						<h3 class="text-3xl font-medium mb-4">Add custom sound effects</h3>
+						<h3 class="text-3xl font-semibold mb-4">Deploy across every channel</h3>
 						<p class="text-gray-600 leading-relaxed mb-6">
-							Enrich your content with any sound effect you can describe with a prompt. From subtle ambience to cinematic impact, add effects directly in Studio for a polished production.
+							Embed your clone on your website, deploy via SMS and WhatsApp, integrate with Slack, or enable voice and video interactions. One digital mind, unlimited touchpoints.
 						</p>
 					</div>
 
                     <div class="max-w-md">
-						<h3 class="text-3xl font-medium mb-4">Fix mistakes in seconds with Speech Correction</h3>
+						<h3 class="text-3xl font-semibold mb-4">Maintain relationships at scale</h3>
 						<p class="text-gray-600 leading-relaxed mb-6">
-							Edit spoken audio instantly using AI voice cloning. Just change the script, and Studio regenerates the same voice — no re-recording, no extra takes.
+							Never ghost anyone again. Your clone recognizes loyal fans, follows up with intent, and ensures the right people feel heard — while you focus on what matters most.
 						</p>
 					</div>
 
                     <div class="max-w-md">
-						<h3 class="text-3xl font-medium mb-4">Clean up noisy audio with Voice Isolator</h3>
+						<h3 class="text-3xl font-semibold mb-4">Complete privacy and ownership</h3>
 						<p class="text-gray-600 leading-relaxed mb-6">
-							Remove background noise, reverb, and distractions with AI-powered noise reduction. Enhance audio quality so dialogue always sounds clear and professional.
+							Strict privacy standards with encrypted storage. You own your digital mind completely. We never share or sell your data. Your knowledge, your control, your legacy.
 						</p>
 					</div>
 				</div>
 
 				<!-- Right Column: Sticky Visual -->
 				<div class="relative hidden lg:block">
-					<div class="sticky top-32 bg-gray-50 rounded-2xl border border-gray-100 p-6 h-[600px] overflow-hidden shadow-sm">
-                        <div class="mb-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Select a voice</div>
+					<div class="sticky top-32 bg-gradient-to-br from-primary-50 to-white rounded-2xl border border-primary-100 p-6 h-[600px] overflow-hidden shadow-sm">
+                        <div class="mb-4 text-xs font-medium text-primary-600 uppercase tracking-wider">Featured AI Clones</div>
                         <div class="space-y-2">
-                            {#each voices as voice}
-                                <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-100 hover:border-gray-200 transition cursor-pointer group">
-                                    <div class="w-10 h-10 rounded-full {voice.color} flex-shrink-0"></div>
+                            {#each cloneExamples as clone}
+                                <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-100 hover:border-primary-200 transition cursor-pointer group">
+                                    <div class="w-10 h-10 rounded-full {clone.color} flex-shrink-0"></div>
                                     <div class="flex-1 min-w-0">
-                                        <div class="font-medium text-sm text-gray-900 group-hover:text-black">{voice.name}</div>
-                                        <div class="text-xs text-gray-500 truncate">{voice.desc}</div>
+                                        <div class="font-medium text-sm text-gray-900 group-hover:text-primary-700">{clone.name}</div>
+                                        <div class="text-xs text-gray-500 truncate">{clone.desc}</div>
                                     </div>
-                                    <div class="w-6 h-6 rounded-full border border-gray-200 flex items-center justify-center text-gray-300">
-                                        {@html Icons.Play}
+                                    <div class="w-6 h-6 rounded-full border border-primary-200 flex items-center justify-center text-primary-400 group-hover:bg-primary-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </div>
                                 </div>
                             {/each}
                         </div>
                         <!-- Fade out at bottom -->
-                        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
 					</div>
 				</div>
 			</div>
@@ -280,95 +297,117 @@
 	<section class="py-20 bg-white">
 		<div class="container-custom">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-4xl font-medium mb-4">All your creative tools, in one seamless timeline</h2>
+				<h2 class="text-4xl font-semibold mb-4">Everything you need to build and deploy your digital mind</h2>
 				<p class="text-gray-600">
-					From captions and collaboration to video editing and multilingual audio, Studio 3.0 combines every tool you need to edit, produce, and share at scale.
+					From content ingestion to multi-channel deployment, Delphi combines every tool you need to create, customize, and scale your AI clone.
 				</p>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-				<!-- Timeline (Span 2) -->
-				<div class="md:col-span-2 bg-gray-50 rounded-2xl p-8 min-h-[300px] relative overflow-hidden group border border-gray-100">
+				<!-- Content Ingestion (Span 2) -->
+				<div class="md:col-span-2 bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 min-h-[300px] relative overflow-hidden group border border-primary-100">
                     <div class="relative z-10">
-					    <h3 class="text-xl font-medium mb-2">Timeline</h3>
-					    <p class="text-sm text-gray-600 max-w-xs">Trim, merge, and edit audio and video with precision. Sync voiceovers, music, and sound effects on a single intuitive editing timeline.</p>
+					    <h3 class="text-xl font-semibold mb-2">Content Ingestion</h3>
+					    <p class="text-sm text-gray-600 max-w-xs">Upload text, audio, and video. Link to live content feeds for continuous learning. Your clone indexes everything automatically.</p>
                     </div>
                     <div class="absolute bottom-0 right-0 w-3/4 h-3/4 bg-white rounded-tl-2xl shadow-xl border border-gray-200 transform translate-y-4 translate-x-4 group-hover:translate-x-2 group-hover:translate-y-2 transition duration-500">
-                         <!-- Mock timeline UI -->
+                         <!-- Mock content types -->
                          <div class="p-4 space-y-2">
-                             <div class="h-8 bg-blue-100 rounded w-full"></div>
-                             <div class="h-8 bg-orange-100 rounded w-2/3 ml-12"></div>
-                             <div class="h-8 bg-purple-100 rounded w-1/2 ml-4"></div>
+                             <div class="flex items-center gap-2 h-8 bg-primary-100 rounded px-3">
+                                 <span class="text-xs">📄</span>
+                                 <span class="text-xs font-medium text-primary-700">Articles & Blog Posts</span>
+                             </div>
+                             <div class="flex items-center gap-2 h-8 bg-secondary-100 rounded px-3 ml-12">
+                                 <span class="text-xs">🎙️</span>
+                                 <span class="text-xs font-medium text-secondary-700">Podcast Episodes</span>
+                             </div>
+                             <div class="flex items-center gap-2 h-8 bg-primary-100 rounded px-3 ml-4">
+                                 <span class="text-xs">🎥</span>
+                                 <span class="text-xs font-medium text-primary-700">Video Content</span>
+                             </div>
                          </div>
                     </div>
 				</div>
 
-				<!-- Video Support -->
-				<div class="bg-gray-50 rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-gray-100">
+				<!-- Multi-Channel Deploy -->
+				<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-primary-100">
                     <div class="relative z-10">
-					    <h3 class="text-xl font-medium mb-2">Video support</h3>
-					    <p class="text-sm text-gray-600">Upload MP4 or MOV files and enhance them with AI.</p>
+					    <h3 class="text-xl font-semibold mb-2">Multi-Channel</h3>
+					    <p class="text-sm text-gray-600">Deploy everywhere: SMS, WhatsApp, web, voice, video.</p>
                     </div>
-                     <div class="absolute bottom-8 left-8 right-8 h-32 bg-blue-900 rounded-lg shadow-lg overflow-hidden mt-4">
-                         <div class="w-full h-full opacity-50 bg-[url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
-                         <div class="absolute inset-0 flex items-center justify-center">
-                             <div class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white">▶</div>
+                     <div class="absolute bottom-8 left-8 right-8 space-y-2">
+                         <div class="bg-white rounded-lg p-2 shadow-sm border border-gray-200 flex items-center gap-2">
+                             <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center text-white text-xs">💬</div>
+                             <span class="text-xs font-medium">WhatsApp</span>
+                         </div>
+                         <div class="bg-white rounded-lg p-2 shadow-sm border border-gray-200 flex items-center gap-2">
+                             <div class="w-6 h-6 bg-primary-500 rounded flex items-center justify-center text-white text-xs">🌐</div>
+                             <span class="text-xs font-medium">Website</span>
+                         </div>
+                         <div class="bg-white rounded-lg p-2 shadow-sm border border-gray-200 flex items-center gap-2">
+                             <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs">📱</div>
+                             <span class="text-xs font-medium">SMS</span>
                          </div>
                      </div>
 				</div>
 
-				<!-- Captions -->
-				<div class="bg-gray-50 rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-gray-100">
+				<!-- Privacy & Security -->
+				<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-primary-100">
                     <div class="relative z-10">
-					    <h3 class="text-xl font-medium mb-2">Captions</h3>
-					    <p class="text-sm text-gray-600">Generate captions in one click for accessibility and engagement.</p>
+					    <h3 class="text-xl font-semibold mb-2">Privacy First</h3>
+					    <p class="text-sm text-gray-600">Encrypted storage. Complete ownership. Never shared or sold.</p>
                     </div>
-                    <div class="absolute bottom-8 left-8 flex gap-4">
-                        <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl shadow-lg flex items-center justify-center text-white text-xs font-bold p-2 text-center">Minimal Clean</div>
-                        <div class="w-24 h-24 bg-white rounded-xl shadow-lg border border-gray-200 flex items-center justify-center text-gray-800 text-xs font-serif p-2 text-center">Vintage Cinema</div>
+                    <div class="absolute bottom-8 left-8 right-8 space-y-2">
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white">✓</div>
+                            <span class="text-gray-700">End-to-end encryption</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white">✓</div>
+                            <span class="text-gray-700">You own your data</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white">✓</div>
+                            <span class="text-gray-700">No data sharing</span>
+                        </div>
                     </div>
 				</div>
 
-				<!-- Public Project URLs -->
-				<div class="bg-gray-50 rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-gray-100">
+				<!-- Analytics -->
+				<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-primary-100">
                     <div class="relative z-10">
-					    <h3 class="text-xl font-medium mb-2">Public project URLs</h3>
-					    <p class="text-sm text-gray-600">Share editable links for client or team feedback.</p>
+					    <h3 class="text-xl font-semibold mb-2">Signal Detection</h3>
+					    <p class="text-sm text-gray-600">Reveal rising trends, hidden signals, and actionable moments.</p>
                     </div>
                     <div class="absolute bottom-8 left-8 right-8 bg-white rounded-xl p-3 shadow-sm border border-gray-200 text-xs space-y-2">
-                        <div class="flex items-center gap-2">
-                            <div class="w-5 h-5 bg-blue-500 rounded-full"></div>
-                            <span class="font-medium">Dulce Vetrovs</span>
-                            <span class="text-gray-400">2h</span>
+                        <div class="flex items-center justify-between">
+                            <span class="font-medium text-gray-700">Top Question</span>
+                            <span class="text-primary-600">↑ 45%</span>
                         </div>
-                        <div class="pl-7 text-gray-600">0:25 Should be 'Studio 3.0' here</div>
-                         <div class="pl-7 flex items-center gap-2 mt-1">
-                            <div class="w-4 h-4 bg-gray-800 rounded-full"></div>
-                            <span class="font-medium text-[10px]">Kadin Carder</span>
-                            <span class="text-gray-400 text-[10px]">30m</span>
+                        <div class="text-gray-600 text-[10px]">"How do I get started with..."</div>
+                         <div class="flex items-center justify-between mt-2">
+                            <span class="font-medium text-gray-700">Engagement</span>
+                            <span class="text-green-600">↑ 28%</span>
                         </div>
-                        <div class="pl-12 text-gray-600 text-[10px]">Good catch! Fixed</div>
+                        <div class="text-gray-600 text-[10px]">1,247 conversations this week</div>
                     </div>
 				</div>
 
-				<!-- Language Support -->
-				<div class="bg-gray-50 rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-gray-100">
+				<!-- Customization -->
+				<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 min-h-[300px] relative overflow-hidden border border-primary-100">
                     <div class="relative z-10">
-					    <h3 class="text-xl font-medium mb-2">32+ Language support</h3>
-					    <p class="text-sm text-gray-600">Produce audio and video in over 30 languages.</p>
+					    <h3 class="text-xl font-semibold mb-2">Custom Behavior</h3>
+					    <p class="text-sm text-gray-600">Fine-tune how your clone responds with customization notes.</p>
                     </div>
                     <div class="absolute bottom-8 left-8 right-8 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                        <div class="p-2 border-b border-gray-100 flex items-center gap-2">
-                            <span class="text-lg">🇪🇸</span> <span class="text-sm font-medium">Spanish</span>
+                        <div class="p-2 border-b border-gray-100 text-xs">
+                            <span class="font-medium text-gray-700">Tone:</span> <span class="text-gray-600">Professional yet approachable</span>
                         </div>
-                        <div class="p-2 border-b border-gray-100 flex items-center gap-2">
-                            <span class="text-lg">🇬🇧</span> <span class="text-sm font-medium">English</span>
+                        <div class="p-2 border-b border-gray-100 text-xs">
+                            <span class="font-medium text-gray-700">Style:</span> <span class="text-gray-600">Concise, actionable advice</span>
                         </div>
-                         <div class="p-2 border-b border-gray-100 flex items-center gap-2">
-                            <span class="text-lg">🇩🇪</span> <span class="text-sm font-medium">German</span>
-                        </div>
-                         <div class="p-2 flex items-center gap-2">
-                            <span class="text-lg">🇫🇷</span> <span class="text-sm font-medium">French</span>
+                         <div class="p-2 text-xs">
+                            <span class="font-medium text-gray-700">Focus:</span> <span class="text-gray-600">Scaling strategies</span>
                         </div>
                     </div>
 				</div>
@@ -376,13 +415,13 @@
 		</div>
 	</section>
 
-	<!-- Carousel Section -->
+	<!-- Use Cases Section -->
 	<section class="py-20">
 		<div class="container-custom">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-4xl font-medium mb-4">Built for every creator</h2>
+				<h2 class="text-4xl font-semibold mb-4">Built for experts who scale knowledge</h2>
 				<p class="text-gray-600">
-					From video creators to podcasters and audiobook authors, Studio 3.0 adapts to every workflow — combining AI audio editing, video editing, and professional sound design.
+					From thought leaders to coaches and creators, Delphi helps you monetize expertise, maintain relationships, and capture every opportunity — without burning out.
 				</p>
 			</div>
 
@@ -390,55 +429,78 @@
                 <!-- Card 1 -->
                 <div class="group cursor-pointer">
                     <div class="aspect-square rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77ac618?q=80&w=2070&auto=format&fit=crop" alt="Audiobook" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <img src="/generated/image-a-professional-coach-reviewing-questions-1765127010789-1.webp" alt="Coaches" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="text-white text-sm font-medium">For Coaches</div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-medium mb-2">Audiobook authors</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Revise narration instantly with text-based editing, enrich audio with custom soundscapes, and generate cinematic audiobook trailers.</p>
+                    <h3 class="text-lg font-semibold mb-2">Coaches & Consultants</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Answer unlimited client questions, create personalized learning experiences, and maintain relationships at scale without sacrificing quality or time.</p>
                 </div>
 
                  <!-- Card 2 -->
                 <div class="group cursor-pointer">
                     <div class="aspect-square rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop" alt="Podcasters" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
-                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <img src="/generated/image-a-business-owner-in-casual-attire-having-1765127016332-2.webp" alt="Business Owners" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
+                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent"></div>
+                         <div class="absolute bottom-4 left-4 right-4">
+                            <div class="text-white text-sm font-medium">For Business</div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-medium mb-2">Podcasters</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Clean up dialogue with noise removal, fix mistakes without re-recording, and design custom theme music or soundscapes for every episode.</p>
+                    <h3 class="text-lg font-semibold mb-2">Business Owners</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Turn every website visit into a conversation. Capture leads, share products, and provide instant support while you focus on building your business.</p>
                 </div>
 
                  <!-- Card 3 -->
                 <div class="group cursor-pointer">
                     <div class="aspect-square rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop" alt="Filmmakers" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
-                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <img src="/generated/image-a-content-creator-recording-themselves-s-1765127021019-3.webp" alt="Creators" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
+                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent"></div>
+                         <div class="absolute bottom-4 left-4 right-4">
+                            <div class="text-white text-sm font-medium">For Creators</div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-medium mb-2">AI filmmakers</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Combine video, audio, and AI-generated music to prototype scenes, add voiceovers, and experiment with sound design inside a single editor.</p>
+                    <h3 class="text-lg font-semibold mb-2">Creators & Influencers</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Build deeper audience connections, monetize your knowledge, and never ghost your fans. Your clone ensures everyone feels heard.</p>
                 </div>
             </div>
 		</div>
 	</section>
 
 	<!-- API Section -->
-	<section class="py-20 bg-gray-50">
+	<section class="py-20 bg-gradient-to-br from-primary-50 to-white">
 		<div class="container-custom">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-4xl font-medium mb-4">Everything in Studio, available through our API</h2>
+				<h2 class="text-4xl font-semibold mb-4">Integrate your AI clone anywhere with our API</h2>
 				<p class="text-gray-600">
-					Access the same voices, music, and audio tools behind Studio 3.0 — programmatically, at scale, in any workflow.
+					Embed conversational AI into your app, website, or workflow. Access the same technology powering thousands of digital minds — programmatically, at scale.
 				</p>
 			</div>
 
-			<div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-200 p-6 overflow-x-auto">
+			<div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-primary-200 p-6 overflow-x-auto">
 				<pre class="text-sm font-mono leading-relaxed text-gray-800">
-<span class="text-purple-600">import</span> &#123; ElevenLabsClient &#125; <span class="text-purple-600">from</span> <span class="text-green-600">"@elevenlabs/elevenlabs-js"</span>;
-<span class="text-purple-600">const</span> client = <span class="text-purple-600">new</span> <span class="text-yellow-600">ElevenLabsClient</span>(&#123; apiKey: <span class="text-green-600">"YOUR_API_KEY"</span> &#125;)
-<span class="text-purple-600">await</span> client.textToSpeech.<span class="text-blue-600">convert</span>(<span class="text-green-600">"JBFqnCBsd6RMkjVDRZzb"</span>, &#123;
-  outputFormat: <span class="text-green-600">"mp3_44100_128"</span>,
-  text: <span class="text-green-600">"The first move is what sets everything in motion."</span>,
-  modelId: <span class="text-green-600">"eleven_multilingual_v2"</span>,
-&#125;);</pre>
+<span class="text-primary-600">import</span> &#123; DelphiClient &#125; <span class="text-primary-600">from</span> <span class="text-green-600">"@delphi/sdk"</span>;
+
+<span class="text-primary-600">const</span> delphi = <span class="text-primary-600">new</span> <span class="text-secondary-600">DelphiClient</span>(&#123; 
+  apiKey: <span class="text-green-600">"YOUR_API_KEY"</span> 
+&#125;);
+
+<span class="text-primary-600">const</span> response = <span class="text-primary-600">await</span> delphi.clone.<span class="text-blue-600">ask</span>(&#123;
+  cloneId: <span class="text-green-600">"brian-halligan"</span>,
+  question: <span class="text-green-600">"What's your advice for scaling a startup?"</span>,
+  context: &#123; 
+    channel: <span class="text-green-600">"web"</span>,
+    userId: <span class="text-green-600">"user_123"</span> 
+  &#125;
+&#125;);
+
+console.<span class="text-blue-600">log</span>(response.answer);
+<span class="text-gray-500">// "The biggest lesson was understanding that culture compounds..."</span></pre>
+			</div>
+			
+			<div class="text-center mt-8">
+				<a href="#" class="text-primary-600 font-medium hover:text-primary-700">View API Documentation →</a>
 			</div>
 		</div>
 	</section>
@@ -446,18 +508,18 @@
 	<!-- FAQ Section -->
 	<section class="py-20">
 		<div class="container-custom">
-			<h2 class="text-4xl font-medium mb-12">Frequently asked questions</h2>
+			<h2 class="text-4xl font-semibold mb-12">Frequently asked questions</h2>
 			<div class="border-t border-gray-200">
 				{#each faqs as faq}
 					<details class="group border-b border-gray-200">
-						<summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-gray-600 transition">
+						<summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-primary-600 transition">
 							<span class="text-lg font-medium">{faq}</span>
-							<span class="transform group-open:rotate-45 transition-transform duration-200">
+							<span class="transform group-open:rotate-45 transition-transform duration-200 text-primary-600">
 								{@html Icons.Plus}
 							</span>
 						</summary>
-						<div class="pb-6 text-gray-600">
-							<p>This is a placeholder answer for the FAQ question. The actual content would go here.</p>
+						<div class="pb-6 text-gray-600 leading-relaxed max-w-3xl">
+							<p>Delphi creates interactive AI clones that capture your voice, style, and knowledge. Upload your content, customize behavior, and deploy across multiple channels to scale your expertise without repetitive effort.</p>
 						</div>
 					</details>
 				{/each}
@@ -466,14 +528,17 @@
 	</section>
 
 	<!-- Bottom CTA -->
-	<section class="py-24 bg-gray-50">
+	<section class="py-24 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
 		<div class="container-custom flex flex-col md:flex-row items-center justify-between gap-8">
-			<h2 class="text-4xl font-medium">The most realistic voice AI platform</h2>
+			<div>
+				<h2 class="text-4xl font-semibold mb-2">Ready to clone yourself?</h2>
+				<p class="text-primary-100 text-lg">Join thousands of experts scaling their knowledge with AI</p>
+			</div>
 			<div class="flex items-center gap-4">
-				<a href="#" class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
-					Create an AI agent
+				<a href="#" class="bg-white text-primary-600 px-6 py-3 rounded-full font-medium hover:bg-primary-50 transition">
+					Create Your Clone
 				</a>
-				<a href="#" class="bg-white border border-gray-200 text-black px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition">
+				<a href="#" class="bg-primary-700 border border-primary-500 text-white px-6 py-3 rounded-full font-medium hover:bg-primary-800 transition">
 					Talk to sales
 				</a>
 			</div>
@@ -483,13 +548,13 @@
 	<!-- Footer -->
 	<footer class="bg-white pt-20 pb-10 border-t border-gray-100 text-xs">
 		<div class="container-custom">
-			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-20">
+			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-20">
                 {#each Object.entries(footerLinks) as [category, links]}
                     <div>
                         <h4 class="font-bold text-gray-400 mb-6 tracking-wider">{category}</h4>
                         <ul class="space-y-3">
                             {#each links as link}
-                                <li><a href="#" class="text-gray-600 hover:text-black transition">{link}</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary-600 transition">{link}</a></li>
                             {/each}
                         </ul>
                     </div>
@@ -497,20 +562,20 @@
 			</div>
 
 			<div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gray-100 gap-4">
-				<div class="flex items-center gap-2 font-semibold text-lg tracking-tight text-gray-400">
-                    <span class="font-bold">II</span>ElevenLabs
+				<div class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary-600">
+                    Delphi
                 </div>
                 
                 <div class="flex flex-wrap justify-center gap-6 text-gray-500">
-                    <a href="#" class="hover:text-black">Privacy</a>
-                    <a href="#" class="hover:text-black">Terms</a>
-                    <a href="#" class="hover:text-black">Safety</a>
-                    <a href="#" class="hover:text-black">Modify cookies</a>
+                    <a href="#" class="hover:text-primary-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary-600">Terms of Service</a>
+                    <a href="#" class="hover:text-primary-600">Security</a>
+                    <a href="#" class="hover:text-primary-600">© 2024 Delphi</a>
                 </div>
 
                  <div class="flex items-center gap-2 text-gray-500">
                     <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span>ENGLISH</span>
+                    <span>All systems operational</span>
                 </div>
 			</div>
 		</div>
